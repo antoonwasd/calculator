@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#222, #333);
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.output {
+  width: 26rem;
+}
+#result {
+  font-size: 1.5rem;
+}
+input {
+  font-size: 4rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.output input {
+  width: 100%;
+  text-align: right;
+  outline: none;
+}
+button {
+  font-size: 2rem;
+  height: 6rem;
+  width: 6rem;
+  border: none;
+  border-radius: 50%;
+  margin: 0.5rem;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 40%);
+}
+.dark-button {
+  background-color: hsl(0, 0%, 25%);
+}
+#equal {
+  background-color: hsl(321, 25%, 50%);
+}
+#zero {
+  width: 13rem;
+  border-radius: 3rem;
+}
+.dark-button:hover {
+  background-color: hsl(0, 0%, 40%);
+}
+#equal:hover {
+  background-color: hsl(321, 25%, 60%);
+}
+.dark-button:active {
+  background-color: hsl(0, 0%, 25%);
+}
+#equal:active {
+  background-color: hsl(321, 25%, 70%);
+}
+button:hover {
+  background-color: hsl(0, 0%, 25%);
+}
+button:active {
+  background-color: hsl(0, 0%, 40%);
+}
