@@ -29,6 +29,7 @@ function calculate(){
     }
     if(display.value === "Infinity"){
         display.value = " ";
+        result.value = " ";
     }
     
     }
