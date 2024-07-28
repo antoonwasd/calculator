@@ -6,6 +6,7 @@ function appendToDisplay(input){
 }
 
 
+
 function allClear(){
     display.value = "";
     result.value = "";
@@ -25,6 +26,9 @@ function calculate(){
     }
     catch(error){
     display.value = "Error";
+    }
+    if(display.value === "Infinity"){
+        display.value = "0";
     }
     
     }
