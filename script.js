@@ -28,7 +28,7 @@ function calculate(){
     display.value = "Error";
     }
     if(display.value === "Infinity"){
-        display.value = "0";
+        display.value = " ";
     }
     
     }
