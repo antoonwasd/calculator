@@ -1,11 +1,11 @@
 const display = document.getElementById("display");
 const result = document.getElementById("result");
+const numberButton = document.getElementsByClassName("number");
 
 function appendToDisplay(input){
-    display.value += input;
+display.value += input;
+ 
 }
-
-
 
 function allClear(){
     display.value = "";
@@ -19,29 +19,20 @@ function deleteOne(){
 }
 
 function calculate(){
-    
-    result.value += display.value;
-    try {
-        display.value = eval(result.value);
-    }
-    catch(error){
-    display.value = "Error";
-    }
-    if(display.value === "Infinity"){
-        display.value = " ";
-        result.value = " ";
-    }
-    
-    }
-    
-function operator(input){
-    display.value += input;
     result.value = display.value;
-    display.value = "";
+    display.value = eval(result.value);
+    if(display.value === "Infinity"){
+        display.value = "";
+    }
+
 }
+    
+
+    
+
 
 function procentCalc(){
-    display.value = display.value / 100;
+    display.value = eval(display.value) / 100;
     
 }
 
