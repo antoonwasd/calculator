@@ -19,10 +19,10 @@ function deleteOne(){
 }
 
 function calculate(){
-    result.value = display.value;
+    result.value = display.value.replace(/\-+/g, '-').replace(/\++/g, '+').replace(/\*+/g, '*', /\/-+/g, '/');
     display.value = eval(result.value);
     if(display.value === "Infinity"){
-        display.value = "";
+        display.value = "undefined";
     }
 
 }
